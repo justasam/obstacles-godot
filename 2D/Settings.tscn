@@ -1,0 +1,320 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://fonts/oddballz.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://scripts/Settings.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 18
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 40
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 24
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=4]
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 14
+use_filter = true
+font_data = ExtResource( 1 )
+
+[node name="Settings" type="Control"]
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1280.0
+margin_bottom = 720.0
+color = Color( 0.262745, 0.305882, 0.364706, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 468.514
+margin_top = 44.7041
+margin_right = 1277.51
+margin_bottom = 266.704
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 0.960784, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 2
+text = "these are our settings..."
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_right = 1280.0
+margin_bottom = 222.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 1, 1, 1, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 2
+text = "Obstacles v0.1"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="button-back" type="Button" parent="."]
+margin_left = 532.798
+margin_top = 575.58
+margin_right = 849.798
+margin_bottom = 657.58
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0.698039, 0.698039, 0.698039, 1 )
+custom_colors/font_color_hover = Color( 0.878431, 0.878431, 0.878431, 1 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
+text = "BACK"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SettingsContainer" type="Control" parent="."]
+margin_left = 174.736
+margin_top = 3.83865
+margin_right = 1132.74
+margin_bottom = 545.839
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="SettingsContainer"]
+margin_left = 161.159
+margin_top = 241.033
+margin_right = 396.159
+margin_bottom = 272.033
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 2
+text = "Sound Effects:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label5" type="Label" parent="SettingsContainer"]
+margin_left = 166.0
+margin_top = 380.0
+margin_right = 339.0
+margin_bottom = 411.0
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 2
+text = "3rd person"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label7" type="Label" parent="SettingsContainer"]
+margin_left = 175.941
+margin_top = 490.63
+margin_right = 348.941
+margin_bottom = 521.63
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 2
+text = "Show FPS"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label8" type="Label" parent="SettingsContainer"]
+margin_left = 578.258
+margin_top = 248.027
+margin_right = 751.258
+margin_bottom = 279.027
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 2
+text = "Generate Maze:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label9" type="Label" parent="SettingsContainer"]
+margin_left = 578.258
+margin_top = 309.715
+margin_right = 751.258
+margin_bottom = 340.715
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 2
+text = "Generate Spinners:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label10" type="Label" parent="SettingsContainer"]
+margin_left = 576.871
+margin_top = 375.012
+margin_right = 749.871
+margin_bottom = 406.012
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 2
+text = "Generate Falling:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label11" type="Label" parent="SettingsContainer"]
+margin_left = 581.0
+margin_top = 434.0
+margin_right = 874.0
+margin_bottom = 465.0
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 2
+text = "Generate Obstacles:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label12" type="Label" parent="SettingsContainer"]
+margin_left = 581.841
+margin_top = 489.675
+margin_right = 754.841
+margin_bottom = 520.675
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 2
+text = "Generate Walls:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label6" type="Label" parent="SettingsContainer"]
+margin_left = 95.4875
+margin_top = 414.0
+margin_right = 435.487
+margin_bottom = 445.0
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0.635294, 0.717647, 0.0901961, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 2
+text = "warning: experimental!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label4" type="Label" parent="SettingsContainer"]
+margin_left = 165.0
+margin_top = 309.0
+margin_right = 248.0
+margin_bottom = 340.0
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 2
+text = "Seed:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="checkbox-sfx" type="CheckBox" parent="SettingsContainer"]
+margin_left = 412.701
+margin_top = 246.608
+margin_right = 436.701
+margin_bottom = 270.608
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="checkbox-3rdperson" type="CheckBox" parent="SettingsContainer"]
+margin_left = 341.683
+margin_top = 386.858
+margin_right = 365.683
+margin_bottom = 410.858
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="checkbox-fps" type="CheckBox" parent="SettingsContainer"]
+margin_left = 340.323
+margin_top = 493.864
+margin_right = 364.323
+margin_bottom = 517.864
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="seed-edit" type="LineEdit" parent="SettingsContainer"]
+margin_left = 253.0
+margin_top = 296.0
+margin_right = 477.0
+margin_bottom = 353.0
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/clear_button_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_uneditable = Color( 0, 0, 0, 1 )
+expand_to_text_length = true
+clear_button_enabled = true
+placeholder_text = "Type in or RNG"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="checkbox-maze" type="CheckBox" parent="SettingsContainer"]
+margin_left = 883.997
+margin_top = 254.999
+margin_right = 907.997
+margin_bottom = 278.999
+
+[node name="checkbox-spinner" type="CheckBox" parent="SettingsContainer"]
+margin_left = 881.996
+margin_top = 312.999
+margin_right = 905.996
+margin_bottom = 336.999
+
+[node name="checkbox-falling" type="CheckBox" parent="SettingsContainer"]
+margin_left = 881.997
+margin_top = 376.999
+margin_right = 905.997
+margin_bottom = 400.999
+
+[node name="checkbox-obstacles" type="CheckBox" parent="SettingsContainer"]
+margin_left = 883.997
+margin_top = 440.998
+margin_right = 907.997
+margin_bottom = 464.998
+
+[node name="checkbox-walls" type="CheckBox" parent="SettingsContainer"]
+margin_left = 885.997
+margin_top = 495.998
+margin_right = 909.997
+margin_bottom = 519.998
+[connection signal="pressed" from="button-back" to="." method="_on_buttonback_pressed"]
+[connection signal="toggled" from="SettingsContainer/checkbox-sfx" to="." method="_on_checkboxsfx_toggled"]
+[connection signal="toggled" from="SettingsContainer/checkbox-3rdperson" to="." method="_on_checkbox3rdperson_toggled"]
+[connection signal="toggled" from="SettingsContainer/checkbox-fps" to="." method="_on_checkboxfps_toggled"]
+[connection signal="text_changed" from="SettingsContainer/seed-edit" to="." method="_on_seededit_text_changed"]
+[connection signal="toggled" from="SettingsContainer/checkbox-maze" to="." method="_on_checkboxmaze_toggled"]
+[connection signal="toggled" from="SettingsContainer/checkbox-spinner" to="." method="_on_checkboxspinner_toggled"]
+[connection signal="toggled" from="SettingsContainer/checkbox-falling" to="." method="_on_checkboxfalling_toggled"]
+[connection signal="toggled" from="SettingsContainer/checkbox-obstacles" to="." method="_on_checkboxobstacles_toggled"]
+[connection signal="toggled" from="SettingsContainer/checkbox-walls" to="." method="_on_checkboxwalls_toggled"]

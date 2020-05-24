@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://mesh_libs/maze_wall.tres" type="MeshLibrary" id=1]
+[ext_resource path="res://scripts/Maze.gd" type="Script" id=2]
+[ext_resource path="res://objects/Floor.tscn" type="PackedScene" id=3]
+
+[node name="Maze" type="Spatial"]
+
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = ExtResource( 1 )
+data = {
+"cells": PoolIntArray(  )
+}
+script = ExtResource( 2 )
+__meta__ = {
+"_editor_clip_": 0
+}
+
+[node name="Floor" parent="." instance=ExtResource( 3 )]

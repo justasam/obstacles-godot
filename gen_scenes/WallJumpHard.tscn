@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://objects/Floor.tscn" type="PackedScene" id=1]
+[ext_resource path="res://objects/Wall.tscn" type="PackedScene" id=2]
+
+[node name="WallJumpHard" type="Spatial"]
+
+[node name="WallLeft" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1.2, 0, 0, 0, 1, 0, 0, 0, 2, -2.14215, 4, 6 )
+
+[node name="WallRight" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1.2, 0, 0, 0, 1, 0, 0, 0, 2, 2.09033, 4, 6 )
+
+[node name="WallRight2" parent="." instance=ExtResource( 2 )]
+transform = Transform( -5.24537e-08, -1, 0, 1.2, -4.37114e-08, 0, 0, 0, 2, 0.0115864, 3, -2 )
+
+[node name="Floor" parent="." instance=ExtResource( 1 )]
+transform = Transform( 3, 0, 0, 0, 1, 0, 0, 0, 10, 0, 0, 0 )
